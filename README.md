@@ -32,6 +32,17 @@ Install and configure the official [Laravel VS Code extension](https://github.co
 
 Install and configure the official [Laravel VS Code extension](https://github.com/laravel/vs-code-extension), which is compatible with Cursor.
 
+### Claude Code
+
+Install [Laravel Boost](https://github.com/laravel/boost) and select Laravel LSP Registration during installation:
+
+```sh
+composer require laravel/boost --dev
+php artisan boost:install
+```
+
+Existing Boost installations can add the registration with `php artisan boost:install --lsp`.
+
 ### Neovim
 
 Neovim 0.11+ is required. Add a custom LSP configuration:
